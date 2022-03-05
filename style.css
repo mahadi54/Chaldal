@@ -1,0 +1,117 @@
+.main-layout{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+
+    grid-template-areas: 
+    "h h h h h h h h h h h h"
+    "m m c c c c c c c c c c"
+    "f f f f f f f f f f f f";
+}
+.header{
+    grid-column: h;
+    background-color: #fdd670;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu{
+    grid-column: m;
+    margin-top: 20px;
+    
+}
+.menu2{
+
+}
+.menu-items{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    height: 30px;
+}
+.menu-items1{
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+.menu-items1 p{
+    padding-left: 10px;
+    color: rgb(47, 47, 48);
+}
+.menu-items2{
+    padding-right: 10px;
+    color: rgb(102, 101, 101);
+
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    grid-column: c;
+
+   
+}
+.content-jumbotron{
+    position: relative;
+    height: 400px;
+
+}
+.content-jumbotron img{
+    background-size: cover;
+}
+.content-jumbotron h1{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    text-align: center;
+    width: 800px;
+}
+
+.jumbotron-input{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 35px;
+    border: 1px solid grey;
+    border-radius: 2%;
+}
+
+.content-adds{
+    display: flex;
+    flex-wrap: wrap;
+}
+.content-text{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    color: rgb(102, 101, 101);
+    
+   
+}
+
+
+.content-items{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid rgb(202, 201, 201);
+    border-radius: 3%;
+    margin: 10px;
+    width: 300px;
+}
+.content-items h4{
+    color: rgb(102, 101, 101);
+}
+.footer{
+    grid-column: f;
+    background-color: brown;
+    height: 200px;
+}
